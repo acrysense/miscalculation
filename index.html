@@ -331,6 +331,24 @@
                 <div class="set-fittings__item">
                     <button class="set-fittings__btn btn" style="background-image: url(img/dist/sprite.svg#fittings);"></button>
                     <div class="set-fittings__group set-fittings__group--lg">
+                        <span class="set-fittings__help">Ручки (ПСЦ)</span>
+                        <select class="set-fittings__select select">
+                            <option value="1" selected disabled>Наименование</option>
+                        </select>
+                    </div>
+                    <div class="set-fittings__group">
+                        <span class="set-fittings__help">Цвет</span>
+                        <input type="text" class="set-fittings__input input" placeholder="Цвет">
+                    </div>
+                    <div class="set-fittings__group">
+                        <span class="set-fittings__help">Кол-во</span>
+                        <input type="text" class="set-fittings__input input" placeholder="Кол-во">
+                    </div>
+                    <button class="set-fittings__btn btn" style="background-image: url(img/dist/sprite.svg#plus);"></button>
+                </div>
+                <div class="set-fittings__item">
+                    <button class="set-fittings__btn btn" style="background-image: url(img/dist/sprite.svg#fittings);"></button>
+                    <div class="set-fittings__group set-fittings__group--lg">
                         <span class="set-fittings__help">Прочее</span>
                         <input type="text" class="set-fittings__input input">
                     </div>
@@ -1610,6 +1628,7 @@
                             </span>
                         </span>
                     </label>
+                    <div class="auth-form__input input" contenteditable="true"></div>
                     <label for="type-miscalculation2" class="small-checkbox">
                         <input type="checkbox" class="small-checkbox__input" name="type-miscalculation" id="type-miscalculation2">
                         <span class="small-checkbox__group">
@@ -1634,6 +1653,7 @@
                             </span>
                         </span>
                     </label>
+                    <div class="auth-form__input input" contenteditable="true"></div>
                     <label for="type-miscalculation3" class="small-checkbox">
                         <input type="checkbox" class="small-checkbox__input" name="type-miscalculation" id="type-miscalculation3">
                         <span class="small-checkbox__group">
@@ -1658,6 +1678,7 @@
                             </span>
                         </span>
                     </label>
+                    <div class="auth-form__input input" contenteditable="true"></div>
                 </div>
                 <button class="auth-form__btn btn">Сформировать КП</button>
             </form>
