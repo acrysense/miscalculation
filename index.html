@@ -13,17 +13,15 @@
     <div class="content content--asunder">
         <div class="content__wrapper content__wrapper--white">
             <div class="navbar">
-                <a href="" class="logotype">
-                    <img src="img/dist/logotype-calculation.svg" alt="Logotype">
-                </a>
+                <div class="navbar__logo">Просчет <input type="text" value="A"></div>
                 <div class="navbar__info">
-                    <p class="navbar__title">Заявка #1888-<strong>10</strong></p>
-                    <p class="navbar__title">Для <strong>Пилигримова Н.З.</strong> от 10.01.2021</p>
+                    <div class="navbar__title">Заявка #1888-<input type="text" value="10" class="navbar__title--number"></div>
+                    <div class="navbar__title">Для <input type="text" value="Пилигримова Н.З." class="navbar__title--name"> от 10.01.2021 <input type="text" value="+79991112233" class="navbar__title--tel" maxlength="11"></div>
                 </div>
             </div>
             <div class="set-corps">
                 <div class="set-corps__item">
-                    <button class="set-corps__btn set-corps__btn--content btn" style="background-image: url(img/dist/sprite.svg#square);">12</button>
+                    <button class="set-corps__btn set-corps__btn--content btn" style="background-image: url(img/dist/sprite.svg#folder);">12</button>
                     <div class="set-corps__group set-corps__group--lg">
                         <span class="set-corps__help">Комплект корпусов 1</span>
                         <select class="set-corps__select select">
@@ -42,7 +40,7 @@
                     <button class="set-corps__btn btn" style="background-image: url(img/dist/sprite.svg#plus);"></button>
                 </div>
                 <div class="set-corps__item">
-                    <button class="set-corps__btn set-corps__btn--content btn" style="background-image: url(img/dist/sprite.svg#square);">12</button>
+                    <button class="set-corps__btn set-corps__btn--content btn" style="background-image: url(img/dist/sprite.svg#folder);">12</button>
                     <div class="set-corps__group set-corps__group--lg">
                         <span class="set-corps__help">Комплект корпусов 2</span>
                         <select class="set-corps__select select">
@@ -61,7 +59,7 @@
                     <button class="set-corps__btn btn" style="background-image: url(img/dist/sprite.svg#plus);"></button>
                 </div>
                 <div class="set-corps__item set-corps__item--black">
-                    <button class="set-corps__btn btn" style="background-image: url(img/dist/sprite.svg#square);"></button>
+                    <button class="set-corps__btn btn" style="background-image: url(img/dist/sprite.svg#folder);"></button>
                     <div class="set-corps__group set-corps__group--lg">
                         <span class="set-corps__help">Комплект корпусов 3</span>
                         <select class="set-corps__select select">
@@ -94,23 +92,19 @@
                     <button class="set-corps__btn btn" style="background-color: #484D53; background-image: url(img/dist/sprite.svg#copy);"></button>
                 </div>
                 <div class="set-corps__item set-corps__item--grey">
-                    <button class="set-corps__btn-plus btn" style="background-color: #484D53; background-image: url(img/dist/sprite.svg#plus);"></button>
+                    <button class="set-corps__btn-plus btn" style="background-image: url(img/dist/sprite.svg#plus);"></button>
                 </div>
             </div>
             <div class="calculation-corps">
                 <div class="calculation-corps__wrapper calculation-corps__wrapper--coral">
                     <div class="calculation-corps__item">
-                        <input type="text" class="calculation-corps__search" value="Корпус 2" placeholder="Введите наименование">
+                        <button class="calculation-corps__btn btn" style="background-image: url(img/dist/sprite.svg#icon-swap);"></button>
+                        <select class="calculation-corps__select-search">
+                            <option value="2">Корпус 2</option>
+                        </select>
                         <button class="calculation-corps__btn btn" style="background-image: url(img/dist/sprite.svg#delete);"></button>
                     </div>
                     <div class="calculation-corps__item">
-                        <button class="calculation-corps__btn btn" style="background-image: url(img/dist/sprite.svg#energy);"></button>
-                        <div class="calculation-corps__group calculation-corps__group--lg">
-                            <span class="calculation-corps__help">Тип</span>
-                            <select class="calculation-corps__select select">
-                                <option value="1" selected disabled>Тип</option>
-                            </select>
-                        </div>
                         <div class="calculation-corps__group">
                             <span class="calculation-corps__help">Высота</span>
                             <input type="text" class="calculation-corps__input input" placeholder="0">
@@ -127,25 +121,20 @@
                             <span class="calculation-corps__help">Полки</span>
                             <input type="text" class="calculation-corps__input input" placeholder="0">
                         </div>
-                        <button class="calculation-corps__btn calculation-corps__btn--white btn">0</button>
+                        <div class="calculation-corps__group">
+                            <span class="calculation-corps__help">Кол-во</span>
+                            <input type="text" class="calculation-corps__input input" placeholder="0">
+                        </div>
+                        <button class="calculation-corps__btn calculation-corps__btn--white btn" style="background-image: url(img/dist/sprite.svg#checked-green);"></button>
                     </div>
                 </div>
                 <div class="calculation-corps__wrapper calculation-corps__wrapper--green">
                     <div class="calculation-corps__item">
+                        <button class="calculation-corps__btn btn" style="background-image: url(img/dist/sprite.svg#icon-swap);"></button>
                         <input type="text" class="calculation-corps__search" value="Корпус 2" placeholder="Введите наименование">
                         <button class="calculation-corps__btn btn" style="background-image: url(img/dist/sprite.svg#delete);"></button>
                     </div>
                     <div class="calculation-corps__item">
-                        <div class="calculation-corps__group calculation-corps__group--sm">
-                            <span class="calculation-corps__help calculation-corps__help--img" style="background-image: url(img/dist/sprite.svg#question-circle);"></span>
-                            <input class="calculation-corps__input calculation-corps__input--white input" value="7" maxlength="1" placeholder="0">
-                        </div>
-                        <div class="calculation-corps__group calculation-corps__group--lg">
-                            <span class="calculation-corps__help">Тип</span>
-                            <select class="calculation-corps__select select">
-                                <option value="1" selected disabled>Тип</option>
-                            </select>
-                        </div>
                         <div class="calculation-corps__group">
                             <span class="calculation-corps__help">Высота</span>
                             <input type="text" class="calculation-corps__input input" placeholder="0">
@@ -162,13 +151,17 @@
                             <span class="calculation-corps__help">Полки</span>
                             <input type="text" class="calculation-corps__input input" placeholder="0">
                         </div>
-                        <button class="calculation-corps__btn calculation-corps__btn--white btn">0</button>
+                        <div class="calculation-corps__group">
+                            <span class="calculation-corps__help">Кол-во</span>
+                            <input type="text" class="calculation-corps__input input" placeholder="0">
+                        </div>
+                        <button class="calculation-corps__btn calculation-corps__btn--white btn" style="background-image: url(img/dist/sprite.svg#checked-green);"></button>
                     </div>
                 </div>
             </div>
             <div class="set-facades">
                 <div class="set-facades__item">
-                    <button class="set-facades__btn set-corps__btn--content btn" style="background-image: url(img/dist/sprite.svg#square);">12</button>
+                    <button class="set-facades__btn set-corps__btn--content btn" style="background-image: url(img/dist/sprite.svg#folder);">12</button>
                     <div class="set-facades__group set-facades__group--lg">
                         <span class="set-facades__help">Комплект фасадов 1</span>
                         <select class="set-facades__select select">
@@ -187,7 +180,7 @@
                     <button class="set-facades__btn btn" style="background-image: url(img/dist/sprite.svg#plus);"></button>
                 </div>
                 <div class="set-facades__item set-facades__item--black">
-                    <button class="set-facades__btn btn" style="background-image: url(img/dist/sprite.svg#square);"></button>
+                    <button class="set-facades__btn btn" style="background-image: url(img/dist/sprite.svg#folder);"></button>
                     <div class="set-facades__group set-facades__group--lg">
                         <span class="set-facades__help">Комплект фасадов 2</span>
                         <select class="set-facades__select select">
@@ -213,7 +206,7 @@
                     <button class="set-corps__btn btn" style="background-color: #484D53; background-image: url(img/dist/sprite.svg#copy);"></button>
                 </div>
                 <div class="set-corps__item set-corps__item--grey">
-                    <button class="set-corps__btn-plus btn" style="background-color: #484D53; background-image: url(img/dist/sprite.svg#plus);"></button>
+                    <button class="set-corps__btn-plus btn" style="background-image: url(img/dist/sprite.svg#plus);"></button>
                 </div>
             </div>
             <div class="calculation-facades">
@@ -223,7 +216,6 @@
                         <button class="calculation-facades__btn btn" style="background-image: url(img/dist/sprite.svg#delete);"></button>
                     </div>
                     <div class="calculation-facades__item calculation-facades__item--ultra-width">
-                        <button class="calculation-facades__btn btn" disabled></button>
                         <div class="calculation-facades__group">
                             <span class="calculation-facades__help">Высота</span>
                             <input type="text" class="calculation-facades__input input" placeholder="0">
@@ -232,13 +224,17 @@
                             <span class="calculation-facades__help">Ширина</span>
                             <input type="text" class="calculation-facades__input input" placeholder="0">
                         </div>
-                        <button class="calculation-facades__btn calculation-facades__btn--white btn">0</button>
+                        <div class="calculation-facades__group">
+                            <span class="calculation-facades__help">Кол-во</span>
+                            <input type="text" class="calculation-facades__input input" placeholder="0">
+                        </div>
+                        <button class="calculation-facades__btn calculation-facades__btn--white btn" style="background-image: url(img/dist/sprite.svg#checked-green);"></button>
                     </div>
                 </div>
             </div>
             <div class="set-fittings">
                 <div class="set-fittings__item">
-                    <button class="set-fittings__btn set-fittings__btn--content btn" style="background-image: url(img/dist/sprite.svg#fittings);">11</button>
+                    <button class="set-fittings__btn set-fittings__btn--content btn" style="background-image: url(img/dist/sprite.svg#folder);">11</button>
                     <div class="set-fittings__group set-fittings__group--lg">
                         <span class="set-fittings__help">Фурнитура Петли</span>
                         <select class="set-fittings__select select">
@@ -252,7 +248,7 @@
                     <button class="set-fittings__btn btn" style="background-image: url(img/dist/sprite.svg#plus);"></button>
                 </div>
                 <div class="set-fittings__item">
-                    <button class="set-fittings__btn set-fittings__btn--content btn" style="background-image: url(img/dist/sprite.svg#fittings);">11</button>
+                    <button class="set-fittings__btn set-fittings__btn--content btn" style="background-image: url(img/dist/sprite.svg#folder);">11</button>
                     <div class="set-fittings__group set-fittings__group--lg">
                         <span class="set-fittings__help">Фурнитура Ящики</span>
                         <select class="set-fittings__select select">
@@ -266,7 +262,7 @@
                     <button class="set-fittings__btn btn" style="background-image: url(img/dist/sprite.svg#plus);"></button>
                 </div>
                 <div class="set-fittings__item">
-                    <button class="set-fittings__btn set-fittings__btn--content btn" style="background-image: url(img/dist/sprite.svg#fittings);">11</button>
+                    <button class="set-fittings__btn set-fittings__btn--content btn" style="background-image: url(img/dist/sprite.svg#folder);">11</button>
                     <div class="set-fittings__group set-fittings__group--lg">
                         <span class="set-fittings__help">Фурнитура Подъемные механизмы</span>
                         <select class="set-fittings__select select">
@@ -280,7 +276,7 @@
                     <button class="set-fittings__btn btn" style="background-image: url(img/dist/sprite.svg#plus);"></button>
                 </div>
                 <div class="set-fittings__item">
-                    <button class="set-fittings__btn set-fittings__btn--content btn" style="background-image: url(img/dist/sprite.svg#fittings);">11</button>
+                    <button class="set-fittings__btn set-fittings__btn--content btn" style="background-image: url(img/dist/sprite.svg#folder);">11</button>
                     <div class="set-fittings__group set-fittings__group--lg">
                         <span class="set-fittings__help">Столешница</span>
                         <select class="set-fittings__select select">
@@ -298,7 +294,7 @@
                     <button class="set-fittings__btn btn" style="background-image: url(img/dist/sprite.svg#plus);"></button>
                 </div>
                 <div class="set-fittings__item">
-                    <button class="set-fittings__btn set-fittings__btn--content btn" style="background-image: url(img/dist/sprite.svg#fittings);">11</button>
+                    <button class="set-fittings__btn set-fittings__btn--content btn" style="background-image: url(img/dist/sprite.svg#folder);">11</button>
                     <div class="set-fittings__group set-fittings__group--lg">
                         <span class="set-fittings__help">Столешница (ПСЦ)</span>
                         <input type="text" class="set-fittings__input input">
@@ -314,7 +310,7 @@
                     <button class="set-fittings__btn btn" style="background-image: url(img/dist/sprite.svg#plus);"></button>
                 </div>
                 <div class="set-fittings__item">
-                    <button class="set-fittings__btn set-fittings__btn--content btn" style="background-image: url(img/dist/sprite.svg#fittings);">11</button>
+                    <button class="set-fittings__btn set-fittings__btn--content btn" style="background-image: url(img/dist/sprite.svg#folder);">11</button>
                     <div class="set-fittings__group set-fittings__group--lg">
                         <span class="set-fittings__help">Ручки</span>
                         <select class="set-fittings__select select">
@@ -332,7 +328,7 @@
                     <button class="set-fittings__btn btn" style="background-image: url(img/dist/sprite.svg#plus);"></button>
                 </div>
                 <div class="set-fittings__item">
-                    <button class="set-fittings__btn set-fittings__btn--content btn" style="background-image: url(img/dist/sprite.svg#fittings);">11</button>
+                    <button class="set-fittings__btn set-fittings__btn--content btn" style="background-image: url(img/dist/sprite.svg#folder);">11</button>
                     <div class="set-fittings__group set-fittings__group--lg">
                         <span class="set-fittings__help">Ручки (ПСЦ)</span>
                         <select class="set-fittings__select select">
@@ -350,7 +346,7 @@
                     <button class="set-fittings__btn btn" style="background-image: url(img/dist/sprite.svg#plus);"></button>
                 </div>
                 <div class="set-fittings__item">
-                    <button class="set-fittings__btn set-fittings__btn--content btn" style="background-image: url(img/dist/sprite.svg#fittings);">11</button>
+                    <button class="set-fittings__btn set-fittings__btn--content btn" style="background-image: url(img/dist/sprite.svg#folder);">11</button>
                     <div class="set-fittings__group set-fittings__group--lg">
                         <span class="set-fittings__help">Прочее</span>
                         <input type="text" class="set-fittings__input input">
@@ -368,10 +364,16 @@
             </div>
         </div>
         <div class="content__wrapper">
+            <div class="navbar">
+                <a href="" class="logotype">
+                    <img src="img/dist/logotype-calculation.svg" alt="Logotype">
+                </a>
+                <a href="" class="navbar__back">ВЕРНУТЬСЯ В ЗАВЯВКИ</a>
+            </div>
             <div class="miscalculation">
                 <div class="miscalculation__wrapper">
                     <div class="miscalculation__header">
-                        <h4 class="miscalculation__title">ПРОСЧЕТ <strong>А</strong></h4>
+                        <h4 class="miscalculation__title">ПРОСЧЕТ <input type="text" value="A"></h4>
                         <button class="miscalculation__settings">
                             <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M11.7674 1.23174C12.7437 2.20805 12.7437 3.79096 11.7674 4.76727C10.7911 5.74358 9.20816 5.74358 8.23186 4.76727C7.25556 3.79096 7.25556 2.20805 8.23186 1.23174C9.20813 0.255435 10.791 0.255435 11.7674 1.23174Z" fill="#3C545C"/>
@@ -398,8 +400,8 @@
                         <div class="miscalculation__list">
                             <div class="miscalculation__item">
                                 <p class="miscalculation__name">Комплект корпусов: <span>Brilliant, Black f</span></p>
-                                <p class="miscalculation__price"><span>176 965</span> ₽</p>
                                 <p class="miscalculation__meters"><span>378.13</span> м<sup>2</sup></p>
+                                <p class="miscalculation__price"><span>176 965</span> ₽</p>
                                 <button class="miscalculation__btn miscalculation__btn--delete">
                                     <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path d="M17.0754 2.92755C13.1759 -0.971943 6.82893 -0.971943 2.92944 2.92755C1.04052 4.81721 0 7.32908 0 10.0005C0 12.6719 1.04052 15.1838 2.92944 17.0727C4.87958 19.0229 7.44101 19.9975 10.0024 19.9975C12.5638 19.9975 15.1253 19.0229 17.0754 17.0727C20.9749 13.1732 20.9749 6.82778 17.0754 2.92755ZM15.9798 15.9772C12.6839 19.2731 7.32089 19.2731 4.02496 15.9772C2.42893 14.3811 1.54955 12.2582 1.54955 10.0005C1.54955 7.74279 2.42893 5.61988 4.02496 4.02307C7.32089 0.727136 12.6839 0.727917 15.9798 4.02307C19.275 7.319 19.275 12.682 15.9798 15.9772Z" fill="#ECF0F3"/>
@@ -409,8 +411,8 @@
                             </div>
                             <div class="miscalculation__item">
                                 <p class="miscalculation__name">Комплект корпусов: <span>Brilliant, Black f</span></p>
-                                <p class="miscalculation__price"><span>176 965</span> ₽</p>
                                 <p class="miscalculation__meters"><span>378.13</span> м<sup>2</sup></p>
+                                <p class="miscalculation__price"><span>176 965</span> ₽</p>
                                 <button class="miscalculation__btn miscalculation__btn--delete">
                                     <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path d="M17.0754 2.92755C13.1759 -0.971943 6.82893 -0.971943 2.92944 2.92755C1.04052 4.81721 0 7.32908 0 10.0005C0 12.6719 1.04052 15.1838 2.92944 17.0727C4.87958 19.0229 7.44101 19.9975 10.0024 19.9975C12.5638 19.9975 15.1253 19.0229 17.0754 17.0727C20.9749 13.1732 20.9749 6.82778 17.0754 2.92755ZM15.9798 15.9772C12.6839 19.2731 7.32089 19.2731 4.02496 15.9772C2.42893 14.3811 1.54955 12.2582 1.54955 10.0005C1.54955 7.74279 2.42893 5.61988 4.02496 4.02307C7.32089 0.727136 12.6839 0.727917 15.9798 4.02307C19.275 7.319 19.275 12.682 15.9798 15.9772Z" fill="#ECF0F3"/>
@@ -420,8 +422,8 @@
                             </div>
                             <div class="miscalculation__item">
                                 <p class="miscalculation__name">Комплект корпусов: <span>Brilliant, Black f</span></p>
-                                <p class="miscalculation__price"><span>176 965</span> ₽</p>
                                 <p class="miscalculation__meters"><span>378.13</span> м<sup>2</sup></p>
+                                <p class="miscalculation__price"><span>176 965</span> ₽</p>
                                 <button class="miscalculation__btn miscalculation__btn--delete">
                                     <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path d="M17.0754 2.92755C13.1759 -0.971943 6.82893 -0.971943 2.92944 2.92755C1.04052 4.81721 0 7.32908 0 10.0005C0 12.6719 1.04052 15.1838 2.92944 17.0727C4.87958 19.0229 7.44101 19.9975 10.0024 19.9975C12.5638 19.9975 15.1253 19.0229 17.0754 17.0727C20.9749 13.1732 20.9749 6.82778 17.0754 2.92755ZM15.9798 15.9772C12.6839 19.2731 7.32089 19.2731 4.02496 15.9772C2.42893 14.3811 1.54955 12.2582 1.54955 10.0005C1.54955 7.74279 2.42893 5.61988 4.02496 4.02307C7.32089 0.727136 12.6839 0.727917 15.9798 4.02307C19.275 7.319 19.275 12.682 15.9798 15.9772Z" fill="#ECF0F3"/>
@@ -431,8 +433,8 @@
                             </div>
                             <div class="miscalculation__item">
                                 <p class="miscalculation__name">Комплект корпусов: <span>Brilliant, Black f</span></p>
-                                <p class="miscalculation__price"><span>176 965</span> ₽</p>
                                 <p class="miscalculation__meters"><span>378.13</span> м<sup>2</sup></p>
+                                <p class="miscalculation__price"><span>176 965</span> ₽</p>
                                 <button class="miscalculation__btn">
                                     <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path d="M17.0754 2.92755C13.1759 -0.971943 6.82893 -0.971943 2.92944 2.92755C1.04052 4.81721 0 7.32908 0 10.0005C0 12.6719 1.04052 15.1838 2.92944 17.0727C4.87958 19.0229 7.44101 19.9975 10.0024 19.9975C12.5638 19.9975 15.1253 19.0229 17.0754 17.0727C20.9749 13.1732 20.9749 6.82778 17.0754 2.92755ZM15.9798 15.9772C12.6839 19.2731 7.32089 19.2731 4.02496 15.9772C2.42893 14.3811 1.54955 12.2582 1.54955 10.0005C1.54955 7.74279 2.42893 5.61988 4.02496 4.02307C7.32089 0.727136 12.6839 0.727917 15.9798 4.02307C19.275 7.319 19.275 12.682 15.9798 15.9772Z" fill="#ECF0F3"/>
@@ -447,7 +449,7 @@
                         </div>
                         <div class="miscalculation-tabs">
                             <ul class="miscalculation-tabs__list" role="tablist">
-                                <li class="miscalculation-tabs__item miscalculation-tabs__item--active">
+                                <li class="miscalculation-tabs__item">
                                     <button class="miscalculation-tabs__button" style="background-image: url(img/dist/sprite.svg#miscalculation-tabs-01);"></button>
                                 </li>
                                 <li class="miscalculation-tabs__item">
@@ -457,18 +459,18 @@
                                     <button class="miscalculation-tabs__button" style="background-image: url(img/dist/sprite.svg#miscalculation-tabs-03);"></button>
                                 </li>
                             </ul>
-                            <div class="miscalculation-tabs__content miscalculation-tabs__content--active">
+                            <div class="miscalculation-tabs__content">
                                 <div class="miscalculation__list miscalculation__list--main">
                                     <div class="miscalculation__item">
                                         <p class="miscalculation__name">Комплект корпусов: <span>Brilliant, Black f</span></p>
-                                        <p class="miscalculation__price"><span>176 965</span> ₽</p>
                                         <p class="miscalculation__meters"><span>378.13</span> м<sup>2</sup></p>
+                                        <p class="miscalculation__price"><span>176 965</span> ₽</p>
                                     </div>
                                     <div class="miscalculation__list">
                                         <div class="miscalculation__item">
                                             <p class="miscalculation__name">Корпус: <span>Brilliant, Black f</span></p>
-                                            <p class="miscalculation__price"><span>176 965</span> ₽</p>
                                             <p class="miscalculation__meters"><span>378.13</span> м<sup>2</sup></p>
+                                            <p class="miscalculation__price"><span>176 965</span> ₽</p>
                                             <button class="miscalculation__btn miscalculation__btn--delete">
                                                 <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                     <path d="M17.0754 2.92755C13.1759 -0.971943 6.82893 -0.971943 2.92944 2.92755C1.04052 4.81721 0 7.32908 0 10.0005C0 12.6719 1.04052 15.1838 2.92944 17.0727C4.87958 19.0229 7.44101 19.9975 10.0024 19.9975C12.5638 19.9975 15.1253 19.0229 17.0754 17.0727C20.9749 13.1732 20.9749 6.82778 17.0754 2.92755ZM15.9798 15.9772C12.6839 19.2731 7.32089 19.2731 4.02496 15.9772C2.42893 14.3811 1.54955 12.2582 1.54955 10.0005C1.54955 7.74279 2.42893 5.61988 4.02496 4.02307C7.32089 0.727136 12.6839 0.727917 15.9798 4.02307C19.275 7.319 19.275 12.682 15.9798 15.9772Z" fill="#ECF0F3"/>
@@ -478,8 +480,8 @@
                                         </div>
                                         <div class="miscalculation__item">
                                             <p class="miscalculation__name">Корпус: <span>Brilliant, Black f</span></p>
-                                            <p class="miscalculation__price"><span>176 965</span> ₽</p>
                                             <p class="miscalculation__meters"><span>378.13</span> м<sup>2</sup></p>
+                                            <p class="miscalculation__price"><span>176 965</span> ₽</p>
                                             <button class="miscalculation__btn miscalculation__btn--delete">
                                                 <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                     <path d="M17.0754 2.92755C13.1759 -0.971943 6.82893 -0.971943 2.92944 2.92755C1.04052 4.81721 0 7.32908 0 10.0005C0 12.6719 1.04052 15.1838 2.92944 17.0727C4.87958 19.0229 7.44101 19.9975 10.0024 19.9975C12.5638 19.9975 15.1253 19.0229 17.0754 17.0727C20.9749 13.1732 20.9749 6.82778 17.0754 2.92755ZM15.9798 15.9772C12.6839 19.2731 7.32089 19.2731 4.02496 15.9772C2.42893 14.3811 1.54955 12.2582 1.54955 10.0005C1.54955 7.74279 2.42893 5.61988 4.02496 4.02307C7.32089 0.727136 12.6839 0.727917 15.9798 4.02307C19.275 7.319 19.275 12.682 15.9798 15.9772Z" fill="#ECF0F3"/>
@@ -492,14 +494,14 @@
                                 <div class="miscalculation__list miscalculation__list--main">
                                     <div class="miscalculation__item">
                                         <p class="miscalculation__name">Комплект корпусов: <span>Brilliant, Black f</span></p>
-                                        <p class="miscalculation__price"><span>176 965</span> ₽</p>
                                         <p class="miscalculation__meters"><span>378.13</span> м<sup>2</sup></p>
+                                        <p class="miscalculation__price"><span>176 965</span> ₽</p>
                                     </div>
                                     <div class="miscalculation__list">
                                         <div class="miscalculation__item">
                                             <p class="miscalculation__name">Корпус: <span>Brilliant, Black f</span></p>
-                                            <p class="miscalculation__price"><span>176 965</span> ₽</p>
                                             <p class="miscalculation__meters"><span>378.13</span> м<sup>2</sup></p>
+                                            <p class="miscalculation__price"><span>176 965</span> ₽</p>
                                             <button class="miscalculation__btn miscalculation__btn--delete">
                                                 <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                     <path d="M17.0754 2.92755C13.1759 -0.971943 6.82893 -0.971943 2.92944 2.92755C1.04052 4.81721 0 7.32908 0 10.0005C0 12.6719 1.04052 15.1838 2.92944 17.0727C4.87958 19.0229 7.44101 19.9975 10.0024 19.9975C12.5638 19.9975 15.1253 19.0229 17.0754 17.0727C20.9749 13.1732 20.9749 6.82778 17.0754 2.92755ZM15.9798 15.9772C12.6839 19.2731 7.32089 19.2731 4.02496 15.9772C2.42893 14.3811 1.54955 12.2582 1.54955 10.0005C1.54955 7.74279 2.42893 5.61988 4.02496 4.02307C7.32089 0.727136 12.6839 0.727917 15.9798 4.02307C19.275 7.319 19.275 12.682 15.9798 15.9772Z" fill="#ECF0F3"/>
@@ -509,8 +511,8 @@
                                         </div>
                                         <div class="miscalculation__item">
                                             <p class="miscalculation__name">Корпус: <span>Brilliant, Black f</span></p>
-                                            <p class="miscalculation__price"><span>176 965</span> ₽</p>
                                             <p class="miscalculation__meters"><span>378.13</span> м<sup>2</sup></p>
+                                            <p class="miscalculation__price"><span>176 965</span> ₽</p>
                                             <button class="miscalculation__btn miscalculation__btn--delete">
                                                 <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                     <path d="M17.0754 2.92755C13.1759 -0.971943 6.82893 -0.971943 2.92944 2.92755C1.04052 4.81721 0 7.32908 0 10.0005C0 12.6719 1.04052 15.1838 2.92944 17.0727C4.87958 19.0229 7.44101 19.9975 10.0024 19.9975C12.5638 19.9975 15.1253 19.0229 17.0754 17.0727C20.9749 13.1732 20.9749 6.82778 17.0754 2.92755ZM15.9798 15.9772C12.6839 19.2731 7.32089 19.2731 4.02496 15.9772C2.42893 14.3811 1.54955 12.2582 1.54955 10.0005C1.54955 7.74279 2.42893 5.61988 4.02496 4.02307C7.32089 0.727136 12.6839 0.727917 15.9798 4.02307C19.275 7.319 19.275 12.682 15.9798 15.9772Z" fill="#ECF0F3"/>
@@ -773,7 +775,7 @@
                 </div>
                 <div class="miscalculation__wrapper">
                     <div class="miscalculation__header">
-                        <h4 class="miscalculation__title">ПРОСЧЕТ <strong>Б</strong></h4>
+                        <h4 class="miscalculation__title">ПРОСЧЕТ <input type="text" value="Б"></h4>
                         <button class="miscalculation__settings">
                             <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M11.7674 1.23174C12.7437 2.20805 12.7437 3.79096 11.7674 4.76727C10.7911 5.74358 9.20816 5.74358 8.23186 4.76727C7.25556 3.79096 7.25556 2.20805 8.23186 1.23174C9.20813 0.255435 10.791 0.255435 11.7674 1.23174Z" fill="#3C545C"/>
@@ -800,8 +802,8 @@
                         <div class="miscalculation__list">
                             <div class="miscalculation__item">
                                 <p class="miscalculation__name">Комплект корпусов: <span>Brilliant, Black f</span></p>
-                                <p class="miscalculation__price"><span>176 965</span> ₽</p>
                                 <p class="miscalculation__meters"><span>378.13</span> м<sup>2</sup></p>
+                                <p class="miscalculation__price"><span>176 965</span> ₽</p>
                                 <button class="miscalculation__btn miscalculation__btn--delete">
                                     <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path d="M17.0754 2.92755C13.1759 -0.971943 6.82893 -0.971943 2.92944 2.92755C1.04052 4.81721 0 7.32908 0 10.0005C0 12.6719 1.04052 15.1838 2.92944 17.0727C4.87958 19.0229 7.44101 19.9975 10.0024 19.9975C12.5638 19.9975 15.1253 19.0229 17.0754 17.0727C20.9749 13.1732 20.9749 6.82778 17.0754 2.92755ZM15.9798 15.9772C12.6839 19.2731 7.32089 19.2731 4.02496 15.9772C2.42893 14.3811 1.54955 12.2582 1.54955 10.0005C1.54955 7.74279 2.42893 5.61988 4.02496 4.02307C7.32089 0.727136 12.6839 0.727917 15.9798 4.02307C19.275 7.319 19.275 12.682 15.9798 15.9772Z" fill="#ECF0F3"/>
@@ -811,8 +813,8 @@
                             </div>
                             <div class="miscalculation__item">
                                 <p class="miscalculation__name">Комплект корпусов: <span>Brilliant, Black f</span></p>
-                                <p class="miscalculation__price"><span>176 965</span> ₽</p>
                                 <p class="miscalculation__meters"><span>378.13</span> м<sup>2</sup></p>
+                                <p class="miscalculation__price"><span>176 965</span> ₽</p>
                                 <button class="miscalculation__btn miscalculation__btn--delete">
                                     <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path d="M17.0754 2.92755C13.1759 -0.971943 6.82893 -0.971943 2.92944 2.92755C1.04052 4.81721 0 7.32908 0 10.0005C0 12.6719 1.04052 15.1838 2.92944 17.0727C4.87958 19.0229 7.44101 19.9975 10.0024 19.9975C12.5638 19.9975 15.1253 19.0229 17.0754 17.0727C20.9749 13.1732 20.9749 6.82778 17.0754 2.92755ZM15.9798 15.9772C12.6839 19.2731 7.32089 19.2731 4.02496 15.9772C2.42893 14.3811 1.54955 12.2582 1.54955 10.0005C1.54955 7.74279 2.42893 5.61988 4.02496 4.02307C7.32089 0.727136 12.6839 0.727917 15.9798 4.02307C19.275 7.319 19.275 12.682 15.9798 15.9772Z" fill="#ECF0F3"/>
@@ -822,8 +824,8 @@
                             </div>
                             <div class="miscalculation__item">
                                 <p class="miscalculation__name">Комплект корпусов: <span>Brilliant, Black f</span></p>
-                                <p class="miscalculation__price"><span>176 965</span> ₽</p>
                                 <p class="miscalculation__meters"><span>378.13</span> м<sup>2</sup></p>
+                                <p class="miscalculation__price"><span>176 965</span> ₽</p>
                                 <button class="miscalculation__btn miscalculation__btn--delete">
                                     <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path d="M17.0754 2.92755C13.1759 -0.971943 6.82893 -0.971943 2.92944 2.92755C1.04052 4.81721 0 7.32908 0 10.0005C0 12.6719 1.04052 15.1838 2.92944 17.0727C4.87958 19.0229 7.44101 19.9975 10.0024 19.9975C12.5638 19.9975 15.1253 19.0229 17.0754 17.0727C20.9749 13.1732 20.9749 6.82778 17.0754 2.92755ZM15.9798 15.9772C12.6839 19.2731 7.32089 19.2731 4.02496 15.9772C2.42893 14.3811 1.54955 12.2582 1.54955 10.0005C1.54955 7.74279 2.42893 5.61988 4.02496 4.02307C7.32089 0.727136 12.6839 0.727917 15.9798 4.02307C19.275 7.319 19.275 12.682 15.9798 15.9772Z" fill="#ECF0F3"/>
@@ -833,8 +835,8 @@
                             </div>
                             <div class="miscalculation__item">
                                 <p class="miscalculation__name">Комплект корпусов: <span>Brilliant, Black f</span></p>
-                                <p class="miscalculation__price"><span>176 965</span> ₽</p>
                                 <p class="miscalculation__meters"><span>378.13</span> м<sup>2</sup></p>
+                                <p class="miscalculation__price"><span>176 965</span> ₽</p>
                                 <button class="miscalculation__btn">
                                     <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path d="M17.0754 2.92755C13.1759 -0.971943 6.82893 -0.971943 2.92944 2.92755C1.04052 4.81721 0 7.32908 0 10.0005C0 12.6719 1.04052 15.1838 2.92944 17.0727C4.87958 19.0229 7.44101 19.9975 10.0024 19.9975C12.5638 19.9975 15.1253 19.0229 17.0754 17.0727C20.9749 13.1732 20.9749 6.82778 17.0754 2.92755ZM15.9798 15.9772C12.6839 19.2731 7.32089 19.2731 4.02496 15.9772C2.42893 14.3811 1.54955 12.2582 1.54955 10.0005C1.54955 7.74279 2.42893 5.61988 4.02496 4.02307C7.32089 0.727136 12.6839 0.727917 15.9798 4.02307C19.275 7.319 19.275 12.682 15.9798 15.9772Z" fill="#ECF0F3"/>
@@ -855,7 +857,7 @@
                                 <li class="miscalculation-tabs__item">
                                     <button class="miscalculation-tabs__button" style="background-image: url(img/dist/sprite.svg#miscalculation-tabs-02);"></button>
                                 </li>
-                                <li class="miscalculation-tabs__item miscalculation-tabs__item--active">
+                                <li class="miscalculation-tabs__item">
                                     <button class="miscalculation-tabs__button" style="background-image: url(img/dist/sprite.svg#miscalculation-tabs-03);"></button>
                                 </li>
                             </ul>
@@ -863,14 +865,14 @@
                                 <div class="miscalculation__list miscalculation__list--main">
                                     <div class="miscalculation__item">
                                         <p class="miscalculation__name">Комплект корпусов: <span>Brilliant, Black f</span></p>
-                                        <p class="miscalculation__price"><span>176 965</span> ₽</p>
                                         <p class="miscalculation__meters"><span>378.13</span> м<sup>2</sup></p>
+                                        <p class="miscalculation__price"><span>176 965</span> ₽</p>
                                     </div>
                                     <div class="miscalculation__list">
                                         <div class="miscalculation__item">
                                             <p class="miscalculation__name">Корпус: <span>Brilliant, Black f</span></p>
-                                            <p class="miscalculation__price"><span>176 965</span> ₽</p>
                                             <p class="miscalculation__meters"><span>378.13</span> м<sup>2</sup></p>
+                                            <p class="miscalculation__price"><span>176 965</span> ₽</p>
                                             <button class="miscalculation__btn miscalculation__btn--delete">
                                                 <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                     <path d="M17.0754 2.92755C13.1759 -0.971943 6.82893 -0.971943 2.92944 2.92755C1.04052 4.81721 0 7.32908 0 10.0005C0 12.6719 1.04052 15.1838 2.92944 17.0727C4.87958 19.0229 7.44101 19.9975 10.0024 19.9975C12.5638 19.9975 15.1253 19.0229 17.0754 17.0727C20.9749 13.1732 20.9749 6.82778 17.0754 2.92755ZM15.9798 15.9772C12.6839 19.2731 7.32089 19.2731 4.02496 15.9772C2.42893 14.3811 1.54955 12.2582 1.54955 10.0005C1.54955 7.74279 2.42893 5.61988 4.02496 4.02307C7.32089 0.727136 12.6839 0.727917 15.9798 4.02307C19.275 7.319 19.275 12.682 15.9798 15.9772Z" fill="#ECF0F3"/>
@@ -880,8 +882,8 @@
                                         </div>
                                         <div class="miscalculation__item">
                                             <p class="miscalculation__name">Корпус: <span>Brilliant, Black f</span></p>
-                                            <p class="miscalculation__price"><span>176 965</span> ₽</p>
                                             <p class="miscalculation__meters"><span>378.13</span> м<sup>2</sup></p>
+                                            <p class="miscalculation__price"><span>176 965</span> ₽</p>
                                             <button class="miscalculation__btn miscalculation__btn--delete">
                                                 <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                     <path d="M17.0754 2.92755C13.1759 -0.971943 6.82893 -0.971943 2.92944 2.92755C1.04052 4.81721 0 7.32908 0 10.0005C0 12.6719 1.04052 15.1838 2.92944 17.0727C4.87958 19.0229 7.44101 19.9975 10.0024 19.9975C12.5638 19.9975 15.1253 19.0229 17.0754 17.0727C20.9749 13.1732 20.9749 6.82778 17.0754 2.92755ZM15.9798 15.9772C12.6839 19.2731 7.32089 19.2731 4.02496 15.9772C2.42893 14.3811 1.54955 12.2582 1.54955 10.0005C1.54955 7.74279 2.42893 5.61988 4.02496 4.02307C7.32089 0.727136 12.6839 0.727917 15.9798 4.02307C19.275 7.319 19.275 12.682 15.9798 15.9772Z" fill="#ECF0F3"/>
@@ -894,14 +896,14 @@
                                 <div class="miscalculation__list miscalculation__list--main">
                                     <div class="miscalculation__item">
                                         <p class="miscalculation__name">Комплект корпусов: <span>Brilliant, Black f</span></p>
-                                        <p class="miscalculation__price"><span>176 965</span> ₽</p>
                                         <p class="miscalculation__meters"><span>378.13</span> м<sup>2</sup></p>
+                                        <p class="miscalculation__price"><span>176 965</span> ₽</p>
                                     </div>
                                     <div class="miscalculation__list">
                                         <div class="miscalculation__item">
                                             <p class="miscalculation__name">Корпус: <span>Brilliant, Black f</span></p>
-                                            <p class="miscalculation__price"><span>176 965</span> ₽</p>
                                             <p class="miscalculation__meters"><span>378.13</span> м<sup>2</sup></p>
+                                            <p class="miscalculation__price"><span>176 965</span> ₽</p>
                                             <button class="miscalculation__btn miscalculation__btn--delete">
                                                 <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                     <path d="M17.0754 2.92755C13.1759 -0.971943 6.82893 -0.971943 2.92944 2.92755C1.04052 4.81721 0 7.32908 0 10.0005C0 12.6719 1.04052 15.1838 2.92944 17.0727C4.87958 19.0229 7.44101 19.9975 10.0024 19.9975C12.5638 19.9975 15.1253 19.0229 17.0754 17.0727C20.9749 13.1732 20.9749 6.82778 17.0754 2.92755ZM15.9798 15.9772C12.6839 19.2731 7.32089 19.2731 4.02496 15.9772C2.42893 14.3811 1.54955 12.2582 1.54955 10.0005C1.54955 7.74279 2.42893 5.61988 4.02496 4.02307C7.32089 0.727136 12.6839 0.727917 15.9798 4.02307C19.275 7.319 19.275 12.682 15.9798 15.9772Z" fill="#ECF0F3"/>
@@ -911,8 +913,8 @@
                                         </div>
                                         <div class="miscalculation__item">
                                             <p class="miscalculation__name">Корпус: <span>Brilliant, Black f</span></p>
-                                            <p class="miscalculation__price"><span>176 965</span> ₽</p>
                                             <p class="miscalculation__meters"><span>378.13</span> м<sup>2</sup></p>
+                                            <p class="miscalculation__price"><span>176 965</span> ₽</p>
                                             <button class="miscalculation__btn miscalculation__btn--delete">
                                                 <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                     <path d="M17.0754 2.92755C13.1759 -0.971943 6.82893 -0.971943 2.92944 2.92755C1.04052 4.81721 0 7.32908 0 10.0005C0 12.6719 1.04052 15.1838 2.92944 17.0727C4.87958 19.0229 7.44101 19.9975 10.0024 19.9975C12.5638 19.9975 15.1253 19.0229 17.0754 17.0727C20.9749 13.1732 20.9749 6.82778 17.0754 2.92755ZM15.9798 15.9772C12.6839 19.2731 7.32089 19.2731 4.02496 15.9772C2.42893 14.3811 1.54955 12.2582 1.54955 10.0005C1.54955 7.74279 2.42893 5.61988 4.02496 4.02307C7.32089 0.727136 12.6839 0.727917 15.9798 4.02307C19.275 7.319 19.275 12.682 15.9798 15.9772Z" fill="#ECF0F3"/>
@@ -1133,7 +1135,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="miscalculation-tabs__content miscalculation-tabs__content--active">
+                            <div class="miscalculation-tabs__content">
                                 <div class="miscalculation-tabs__inner">
                                     <h4 class="miscalculation-tabs__title">Дизайн-проект</h4>
                                 </div>
@@ -1175,7 +1177,7 @@
                 </div>
                 <div class="miscalculation__wrapper">
                     <div class="miscalculation__header">
-                        <h4 class="miscalculation__title">ПРОСЧЕТ <strong>НАЗВАНИЕ</strong></h4>
+                        <h4 class="miscalculation__title">ПРОСЧЕТ <input type="text" value="Название"></h4>
                         <button class="miscalculation__settings">
                             <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M11.7674 1.23174C12.7437 2.20805 12.7437 3.79096 11.7674 4.76727C10.7911 5.74358 9.20816 5.74358 8.23186 4.76727C7.25556 3.79096 7.25556 2.20805 8.23186 1.23174C9.20813 0.255435 10.791 0.255435 11.7674 1.23174Z" fill="#3C545C"/>
@@ -1202,8 +1204,8 @@
                         <div class="miscalculation__list">
                             <div class="miscalculation__item">
                                 <p class="miscalculation__name">Комплект корпусов: <span>Brilliant, Black f</span></p>
-                                <p class="miscalculation__price"><span>176 965</span> ₽</p>
                                 <p class="miscalculation__meters"><span>378.13</span> м<sup>2</sup></p>
+                                <p class="miscalculation__price"><span>176 965</span> ₽</p>
                                 <button class="miscalculation__btn miscalculation__btn--delete">
                                     <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path d="M17.0754 2.92755C13.1759 -0.971943 6.82893 -0.971943 2.92944 2.92755C1.04052 4.81721 0 7.32908 0 10.0005C0 12.6719 1.04052 15.1838 2.92944 17.0727C4.87958 19.0229 7.44101 19.9975 10.0024 19.9975C12.5638 19.9975 15.1253 19.0229 17.0754 17.0727C20.9749 13.1732 20.9749 6.82778 17.0754 2.92755ZM15.9798 15.9772C12.6839 19.2731 7.32089 19.2731 4.02496 15.9772C2.42893 14.3811 1.54955 12.2582 1.54955 10.0005C1.54955 7.74279 2.42893 5.61988 4.02496 4.02307C7.32089 0.727136 12.6839 0.727917 15.9798 4.02307C19.275 7.319 19.275 12.682 15.9798 15.9772Z" fill="#ECF0F3"/>
@@ -1213,8 +1215,8 @@
                             </div>
                             <div class="miscalculation__item">
                                 <p class="miscalculation__name">Комплект корпусов: <span>Brilliant, Black f</span></p>
-                                <p class="miscalculation__price"><span>176 965</span> ₽</p>
                                 <p class="miscalculation__meters"><span>378.13</span> м<sup>2</sup></p>
+                                <p class="miscalculation__price"><span>176 965</span> ₽</p>
                                 <button class="miscalculation__btn miscalculation__btn--delete">
                                     <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path d="M17.0754 2.92755C13.1759 -0.971943 6.82893 -0.971943 2.92944 2.92755C1.04052 4.81721 0 7.32908 0 10.0005C0 12.6719 1.04052 15.1838 2.92944 17.0727C4.87958 19.0229 7.44101 19.9975 10.0024 19.9975C12.5638 19.9975 15.1253 19.0229 17.0754 17.0727C20.9749 13.1732 20.9749 6.82778 17.0754 2.92755ZM15.9798 15.9772C12.6839 19.2731 7.32089 19.2731 4.02496 15.9772C2.42893 14.3811 1.54955 12.2582 1.54955 10.0005C1.54955 7.74279 2.42893 5.61988 4.02496 4.02307C7.32089 0.727136 12.6839 0.727917 15.9798 4.02307C19.275 7.319 19.275 12.682 15.9798 15.9772Z" fill="#ECF0F3"/>
@@ -1224,8 +1226,8 @@
                             </div>
                             <div class="miscalculation__item">
                                 <p class="miscalculation__name">Комплект корпусов: <span>Brilliant, Black f</span></p>
-                                <p class="miscalculation__price"><span>176 965</span> ₽</p>
                                 <p class="miscalculation__meters"><span>378.13</span> м<sup>2</sup></p>
+                                <p class="miscalculation__price"><span>176 965</span> ₽</p>
                                 <button class="miscalculation__btn miscalculation__btn--delete">
                                     <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path d="M17.0754 2.92755C13.1759 -0.971943 6.82893 -0.971943 2.92944 2.92755C1.04052 4.81721 0 7.32908 0 10.0005C0 12.6719 1.04052 15.1838 2.92944 17.0727C4.87958 19.0229 7.44101 19.9975 10.0024 19.9975C12.5638 19.9975 15.1253 19.0229 17.0754 17.0727C20.9749 13.1732 20.9749 6.82778 17.0754 2.92755ZM15.9798 15.9772C12.6839 19.2731 7.32089 19.2731 4.02496 15.9772C2.42893 14.3811 1.54955 12.2582 1.54955 10.0005C1.54955 7.74279 2.42893 5.61988 4.02496 4.02307C7.32089 0.727136 12.6839 0.727917 15.9798 4.02307C19.275 7.319 19.275 12.682 15.9798 15.9772Z" fill="#ECF0F3"/>
@@ -1235,8 +1237,8 @@
                             </div>
                             <div class="miscalculation__item">
                                 <p class="miscalculation__name">Комплект корпусов: <span>Brilliant, Black f</span></p>
-                                <p class="miscalculation__price"><span>176 965</span> ₽</p>
                                 <p class="miscalculation__meters"><span>378.13</span> м<sup>2</sup></p>
+                                <p class="miscalculation__price"><span>176 965</span> ₽</p>
                                 <button class="miscalculation__btn">
                                     <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path d="M17.0754 2.92755C13.1759 -0.971943 6.82893 -0.971943 2.92944 2.92755C1.04052 4.81721 0 7.32908 0 10.0005C0 12.6719 1.04052 15.1838 2.92944 17.0727C4.87958 19.0229 7.44101 19.9975 10.0024 19.9975C12.5638 19.9975 15.1253 19.0229 17.0754 17.0727C20.9749 13.1732 20.9749 6.82778 17.0754 2.92755ZM15.9798 15.9772C12.6839 19.2731 7.32089 19.2731 4.02496 15.9772C2.42893 14.3811 1.54955 12.2582 1.54955 10.0005C1.54955 7.74279 2.42893 5.61988 4.02496 4.02307C7.32089 0.727136 12.6839 0.727917 15.9798 4.02307C19.275 7.319 19.275 12.682 15.9798 15.9772Z" fill="#ECF0F3"/>
@@ -1254,7 +1256,7 @@
                                 <li class="miscalculation-tabs__item">
                                     <button class="miscalculation-tabs__button" style="background-image: url(img/dist/sprite.svg#miscalculation-tabs-01);"></button>
                                 </li>
-                                <li class="miscalculation-tabs__item miscalculation-tabs__item--active">
+                                <li class="miscalculation-tabs__item">
                                     <button class="miscalculation-tabs__button" style="background-image: url(img/dist/sprite.svg#miscalculation-tabs-02);"></button>
                                 </li>
                                 <li class="miscalculation-tabs__item">
@@ -1265,14 +1267,14 @@
                                 <div class="miscalculation__list miscalculation__list--main">
                                     <div class="miscalculation__item">
                                         <p class="miscalculation__name">Комплект корпусов: <span>Brilliant, Black f</span></p>
-                                        <p class="miscalculation__price"><span>176 965</span> ₽</p>
                                         <p class="miscalculation__meters"><span>378.13</span> м<sup>2</sup></p>
+                                        <p class="miscalculation__price"><span>176 965</span> ₽</p>
                                     </div>
                                     <div class="miscalculation__list">
                                         <div class="miscalculation__item">
                                             <p class="miscalculation__name">Корпус: <span>Brilliant, Black f</span></p>
-                                            <p class="miscalculation__price"><span>176 965</span> ₽</p>
                                             <p class="miscalculation__meters"><span>378.13</span> м<sup>2</sup></p>
+                                            <p class="miscalculation__price"><span>176 965</span> ₽</p>
                                             <button class="miscalculation__btn miscalculation__btn--delete">
                                                 <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                     <path d="M17.0754 2.92755C13.1759 -0.971943 6.82893 -0.971943 2.92944 2.92755C1.04052 4.81721 0 7.32908 0 10.0005C0 12.6719 1.04052 15.1838 2.92944 17.0727C4.87958 19.0229 7.44101 19.9975 10.0024 19.9975C12.5638 19.9975 15.1253 19.0229 17.0754 17.0727C20.9749 13.1732 20.9749 6.82778 17.0754 2.92755ZM15.9798 15.9772C12.6839 19.2731 7.32089 19.2731 4.02496 15.9772C2.42893 14.3811 1.54955 12.2582 1.54955 10.0005C1.54955 7.74279 2.42893 5.61988 4.02496 4.02307C7.32089 0.727136 12.6839 0.727917 15.9798 4.02307C19.275 7.319 19.275 12.682 15.9798 15.9772Z" fill="#ECF0F3"/>
@@ -1282,8 +1284,8 @@
                                         </div>
                                         <div class="miscalculation__item">
                                             <p class="miscalculation__name">Корпус: <span>Brilliant, Black f</span></p>
-                                            <p class="miscalculation__price"><span>176 965</span> ₽</p>
                                             <p class="miscalculation__meters"><span>378.13</span> м<sup>2</sup></p>
+                                            <p class="miscalculation__price"><span>176 965</span> ₽</p>
                                             <button class="miscalculation__btn miscalculation__btn--delete">
                                                 <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                     <path d="M17.0754 2.92755C13.1759 -0.971943 6.82893 -0.971943 2.92944 2.92755C1.04052 4.81721 0 7.32908 0 10.0005C0 12.6719 1.04052 15.1838 2.92944 17.0727C4.87958 19.0229 7.44101 19.9975 10.0024 19.9975C12.5638 19.9975 15.1253 19.0229 17.0754 17.0727C20.9749 13.1732 20.9749 6.82778 17.0754 2.92755ZM15.9798 15.9772C12.6839 19.2731 7.32089 19.2731 4.02496 15.9772C2.42893 14.3811 1.54955 12.2582 1.54955 10.0005C1.54955 7.74279 2.42893 5.61988 4.02496 4.02307C7.32089 0.727136 12.6839 0.727917 15.9798 4.02307C19.275 7.319 19.275 12.682 15.9798 15.9772Z" fill="#ECF0F3"/>
@@ -1296,14 +1298,14 @@
                                 <div class="miscalculation__list miscalculation__list--main">
                                     <div class="miscalculation__item">
                                         <p class="miscalculation__name">Комплект корпусов: <span>Brilliant, Black f</span></p>
-                                        <p class="miscalculation__price"><span>176 965</span> ₽</p>
                                         <p class="miscalculation__meters"><span>378.13</span> м<sup>2</sup></p>
+                                        <p class="miscalculation__price"><span>176 965</span> ₽</p>
                                     </div>
                                     <div class="miscalculation__list">
                                         <div class="miscalculation__item">
                                             <p class="miscalculation__name">Корпус: <span>Brilliant, Black f</span></p>
-                                            <p class="miscalculation__price"><span>176 965</span> ₽</p>
                                             <p class="miscalculation__meters"><span>378.13</span> м<sup>2</sup></p>
+                                            <p class="miscalculation__price"><span>176 965</span> ₽</p>
                                             <button class="miscalculation__btn miscalculation__btn--delete">
                                                 <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                     <path d="M17.0754 2.92755C13.1759 -0.971943 6.82893 -0.971943 2.92944 2.92755C1.04052 4.81721 0 7.32908 0 10.0005C0 12.6719 1.04052 15.1838 2.92944 17.0727C4.87958 19.0229 7.44101 19.9975 10.0024 19.9975C12.5638 19.9975 15.1253 19.0229 17.0754 17.0727C20.9749 13.1732 20.9749 6.82778 17.0754 2.92755ZM15.9798 15.9772C12.6839 19.2731 7.32089 19.2731 4.02496 15.9772C2.42893 14.3811 1.54955 12.2582 1.54955 10.0005C1.54955 7.74279 2.42893 5.61988 4.02496 4.02307C7.32089 0.727136 12.6839 0.727917 15.9798 4.02307C19.275 7.319 19.275 12.682 15.9798 15.9772Z" fill="#ECF0F3"/>
@@ -1313,8 +1315,8 @@
                                         </div>
                                         <div class="miscalculation__item">
                                             <p class="miscalculation__name">Корпус: <span>Brilliant, Black f</span></p>
-                                            <p class="miscalculation__price"><span>176 965</span> ₽</p>
                                             <p class="miscalculation__meters"><span>378.13</span> м<sup>2</sup></p>
+                                            <p class="miscalculation__price"><span>176 965</span> ₽</p>
                                             <button class="miscalculation__btn miscalculation__btn--delete">
                                                 <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                     <path d="M17.0754 2.92755C13.1759 -0.971943 6.82893 -0.971943 2.92944 2.92755C1.04052 4.81721 0 7.32908 0 10.0005C0 12.6719 1.04052 15.1838 2.92944 17.0727C4.87958 19.0229 7.44101 19.9975 10.0024 19.9975C12.5638 19.9975 15.1253 19.0229 17.0754 17.0727C20.9749 13.1732 20.9749 6.82778 17.0754 2.92755ZM15.9798 15.9772C12.6839 19.2731 7.32089 19.2731 4.02496 15.9772C2.42893 14.3811 1.54955 12.2582 1.54955 10.0005C1.54955 7.74279 2.42893 5.61988 4.02496 4.02307C7.32089 0.727136 12.6839 0.727917 15.9798 4.02307C19.275 7.319 19.275 12.682 15.9798 15.9772Z" fill="#ECF0F3"/>
@@ -1325,7 +1327,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="miscalculation-tabs__content miscalculation-tabs__content--active">
+                            <div class="miscalculation-tabs__content">
                                 <div class="miscalculation-tabs__inner">
                                     <div class="miscalculation-tabs__group">
                                         <span class="miscalculation-tabs__mark miscalculation-tabs__mark--accepted">
